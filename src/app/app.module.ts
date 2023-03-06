@@ -41,11 +41,11 @@ import { environment } from 'src/environments/environment';
     FormsModule,
     MatCardModule,
     BrowserAnimationsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirebaseApp(() => initializeApp(environment)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment),
   ],
   providers: [],
   bootstrap: [AppComponent]
