@@ -1,3 +1,74 @@
-.mat-mdc-card-title {
+.card {
+    position: absolute;
+    bottom: 30px;
+    width: 500px;
+    left: calc(50% - 250px);
+  }
+  
+  .cardTitle {
     padding-left: 16px;
-}
+    padding-right: 16px;
+    text-align: center;
+  }
+  
+  @media (max-width: 750px) {
+    .card {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      min-height: 100px;
+    }
+  
+    .cardDescription {
+      padding-right: 100px;
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .card {
+      max-height: 100px;
+      overflow: auto;
+    }
+  
+    .cardDescription {
+      font-size: 12px;
+      padding-right: 68px;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .card {
+      max-height: 100px;
+      overflow: auto;
+    }
+  
+    .cardTitle {
+      font-size: 14px;
+    }
+  
+    .cardDescription {
+      font-size: 12px;
+      padding-right: 68px;
+    }
+  }
+  
+  @media (max-height: 300px) {
+    .card {
+      min-height: 80px;
+      max-height: 80px;
+    }
+  
+    .cardTitle {
+      font-size: 14px;
+    }
+  
+    .cardDescription {
+      font-size: 12px;
+      padding-right: 68px;
+    }
+  
+    .mat-mdc-card-content:last-child {
+      padding-bottom: 5px;
+    }
+  
+  }

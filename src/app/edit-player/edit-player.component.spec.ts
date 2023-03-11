@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StartscreenComponent } from './start-screen.component';
+import { EditPlayerComponent } from './edit-player.component';
 
-describe('StartScreenComponent', () => {
-  let component: StartscreenComponent;
-  let fixture: ComponentFixture<StartscreenComponent>;
+describe('EditPlayerComponent', () => {
+  let component: EditPlayerComponent;
+  let fixture: ComponentFixture<EditPlayerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StartscreenComponent ]
+      declarations: [ EditPlayerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StartscreenComponent);
+    fixture = TestBed.createComponent(EditPlayerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

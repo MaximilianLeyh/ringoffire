@@ -1,5 +1,4 @@
 export const environment = {
-    production: false,
     firebase: {
         apiKey: "AIzaSyA2rhkHZ2WZfLIc7oK_F4UwC-W_g_eD4P8",
         authDomain: "ring-of-fire-797f9.firebaseapp.com",

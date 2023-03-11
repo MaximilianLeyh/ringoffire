@@ -1,32 +1,104 @@
-.start-screen {
-    background-color: #404040;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
+.startscreen {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    img {
-        height: 100vh;
-    }
-}
-
-.start-label-box {
+    height: 100vH;
+    width: 100vW;
+    max-width: 100%;
+  }
+  
+  .imgStartscreen {
+    height: 100vH;
+    width: 100vW;
+    object-fit: cover;
+  }
+  
+  .imgPlay {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 50px;
-    display: flex;
-    justify-content: center;
-
-    img {
-        width: 30vw;
-        height: auto;
-
-        &:hover {
-            filter: brightness(1.25);
-            cursor: pointer;
-        }
+    top: calc(55% - 70px);
+    left: calc(51% - 60px);
+    height: 140px;
+    width: 120px;
+    cursor: pointer;
+    transition: filter 100ms ease-in-out;
+  
+    &:hover {
+      filter: brightness(2);
     }
-}
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .imgPlay {
+      top: calc(55% - 50px);
+      left: calc(51% - 40px);
+      height: 100px;
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 912px) {
+    .imgPlay {
+      top: calc(55% - 70px);
+      left: calc(51% - 60px);
+      height: 140px;
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 414px) {
+    .imgPlay {
+      top: calc(55% - 45px);
+      left: calc(51% - 37.5px);
+      height: 100px;
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .imgPlay {
+      top: calc(55% - 35px);
+      left: calc(51% - 27.5px);
+      height: 70px;
+      width: 55px;
+    }
+  }
+  
+  
+  @media (max-height: 600px) {
+    .imgPlay {
+      top: calc(55% - 50px);
+      left: calc(51% - 40px);
+      height: 100px;
+      width: 80px;
+    }
+  }
+  
+  @media (max-height: 480px) {
+    .imgPlay {
+      top: calc(55% - 40px);
+      left: calc(51% - 30px);
+      height: 80px;
+      width: 60px;
+    }
+  }
+  
+  @media (max-height: 414px) {
+    .imgPlay {
+      top: calc(55% - 40px);
+      left: calc(51% - 30px);
+      height: 80px;
+      width: 60px;
+    }
+  }
+  
+  
+  @media (max-height: 400px) {
+    .imgPlay {
+      top: calc(55% - 30px);
+      left: calc(51% - 22.5px);
+      height: 60px;
+      width: 45px;
+    }
+  }
+  
